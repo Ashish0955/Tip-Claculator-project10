@@ -1,0 +1,96 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="stylesheet" href="styleheader.css" />
+    <link rel="stylesheet" href="stylefooter.css" />
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="projectstyle.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Paste here -->
+
+</head>
+
+<body>
+    <!-- HEADER START -->
+    <div class="menu-bar">
+        <img src="Screenshot (8).png" alt="logo" class="logo-self">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Projects<i class="fas fa-caret-down"></i></a>
+
+                <div class="dropdown-menu">
+                    <ul>
+                        <li><a href="https://ashish0955.github.io/Decor-Home/">Decor Home</a></li>
+                        <li><a href="https://ashish0955.github.io/Javascript-programme/">java-script-Programmes</a></li>
+                        <li><a href="E:\full stack\Programs\Js project\index.html">JavaScript-Projects</a></li>
+
+                    </ul>
+                </div>
+            <li><a href="#">About Me</a></li>
+            </li>
+        </ul>
+    </div>
+    <!-- HEADER END -->
+    <!-- MAIN START -->
+    <div class="container">
+        <div class="calculator">
+            <h2 style = "text-align: center;font-weight: bold;">Tip Calculator</h2>
+            <p style="border-bottom: 2px solid rgba(0, 0, 0, 0.346) ;"></p>
+            <br>
+            <label for="amount">Bill Amount</label>
+            <br>
+            <button><i class="fa-sharp fa-solid fa-indian-rupee-sign"></i></button>
+            <input id="amount" type="number">
+            <br><br>
+            <label for="guests">Number of Guests</label>
+            <br>
+            <button><i class="fa-solid fa-person"></i></button>
+            <input id="guests" type="number">
+            <br><br>
+            <label for="quality">Service Quality</label>
+            <br>
+            <select id="quality">
+                <option disabled selected value="0">Choose...</option>
+                <option value="0.3">30% - Outstanding</option>
+                <option value="0.2">20% - Good</option>
+                <option value="0.15">15% - It was OK</option>
+                <option value="0.1">10% - Bad</option>
+                <option value="0.05">5% - Terrible</option>
+            </select>
+
+            <div style=" text-align: center;">
+            <p style="border-bottom: 2px solid rgba(0, 0, 0, 0.346) ;"></p>
+            <button onclick="calculate()" style="border-radius: 5px; width:fit-content">Calculate</button>
+            </div>
+        </div>
+
+        <div id="tip-amount"></div>
+    </div>
+
+        <!-- MAIN END -->
+        <!-- footer start -->
+        <footer class="footer-class">
+            <p class="copyright">© Ashish Sharma 2022</p>
+            <div class="footer">
+                <a class="icon icon--twitter" href="https://mobile.twitter.com/AshishS46515101" target="_blank"><i
+                        class="fab fa-twitter"></i></a>
+                <a class="icon icon--linkedin" href="https://www.linkedin.com/mwlite/in/ashish-sharma-b99581231"
+                    target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a class="icon icon--github" href="https://github.com/Ashish0955" target="_blank"><i
+                        class="fab fa-github"></i></a>
+                <a class="icon icon--skype" href="https://web.skype.com/" target="_blank"><i
+                        class="fab fa-skype"></i></a>
+            </div>
+        </footer>
+        <!-- footer end -->
+        <!-- Add javascript -->
+        <script src="script.js"></script>
+</body>
+
+</html>
+
+
